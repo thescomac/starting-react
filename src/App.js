@@ -6,8 +6,6 @@ import PokemonRow from "./Components/PokemonRow";
 import PokemonInfo from "./Components/PokemonInfo";
 import PokemonFilter from "./Components/PokemonFilter";
 import PokemonTable from "./Components/PokemonTable";
-import useStore from "./store";
-
 
 import "./App.css";
 
