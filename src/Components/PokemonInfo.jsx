@@ -1,11 +1,9 @@
 import PropTypes from "prop-types";
-import { useContext } from "react";
 import PokemonType from "../PokemonType";
-import { useSelector, useDispatch } from "react-redux";
+import useStore from "../store";
 
 const PokemonInfo = () => {
-  const dispatch = useDispatch();
-  const selectedPokemon = useSelector((state) => state.selectedPokemon);
+  const selectedPokemon = useStore(state => state.selectedPokemon);
   
   return selectedPokemon ? (
     <div>
